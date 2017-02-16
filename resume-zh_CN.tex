@@ -1,0 +1,90 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{fontawesome}
+\newfontfamily{\FA}{[FontAwesome.otf]}
+\usepackage[colorlinks,
+            linkcolor=red,
+            anchorcolor=blue,
+            citecolor=green
+            ]{hyperref}
+           
+\usepackage{zh_CN-fonts} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{姜楠}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{nanjiang@buaa.edu.cn}{(+86) 131-4651-9692}{\href{https://www.cnblogs.com/ZJUT-jiangnan/}{个人博客 (博客园)}}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{北京航空航天大学}}{2015 - 至今}
+在读硕士研究生\ 计算机科学与技术专业 .
+\datedsubsection{\textbf{浙江工业大学}}{2011 - 2015}
+学士\ 计算机科学与技术, 平均绩点: 4.0, 排名: 1/60.
+
+\section{\faLightbulbO\ 研究方向}
+自然语言处理, 机器学习, 深度学习.
+
+
+\section{\faBook\ 发表论文 }
+\begin{itemize}[parsep=0.5ex]
+\item \textbf{Nan Jiang}, Wenger Rong, et al. An Efficient Hierarchical Softmax for Large Vocabulary Language Models[C]. International Conference on World Wide Web, 2017. (submitted)
+\item \textbf{Nan Jiang}, Wenge Rong, et al. Event Trigger Identification with Noise Contrastive Estimation[J]. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2017.
+
+\item \textbf{Nan Jiang}, Wenge Rong, et al. Modeling Joint Representation with Tri-Modal DBNs for Query and Question Matching[J]. IEICE Transactions on Information and Systems, 2016.
+
+\item \textbf{Nan Jiang}, Wenge Rong, et al. An empirical analysis of different sparse penalties for autoencoder in unsupervised feature learning[C]. IJCNN, 2015.
+
+\item Moyuan Huang, Wenge Rong, Tom Arjannikov, \textbf{Nan Jiang}, Zhang Xiong: Bi-Modal Deep Boltzmann Machine Based Musical Emotion Classification. ICANN, 2016.
+\end{itemize}
+
+\section{\faGithub\ Github 项目}
+\begin{itemize}[parsep=0.5ex]
+  \item \href{https://github.com/jiangnanHugo/nmt}{神经机器翻译模型:} github.com/jiangnanHugo/nmt;
+  \item \href{https://github.com/jiangnanHugo/language_modeling}{语言模型评测:} github.com/jiangnanHugo/language\_modeling;
+  \item \href{https://github.com/jiangnanHugo/mlee-nce}{基于NCE的事件触发词识别:} github.com/jiangnanHugo/mlee-nce;
+  \item \href{https://github.com/jiangnanHugo/Self-Taught-Learning}{Matlab实现的自学习算法:} github.com/jiangnanHugo/Self-Taught-Learning;
+  \item \href{https://github.com/jiangnanHugo/parallel-Computing}{Pthread \& MPI 矩阵并行乘法:} github.com/jiangnanHugo/parallel-Computing.
+\end{itemize}
+
+\section{\faUsers\ 实习经历 }
+\datedsubsection{\textbf{北京网易研发中心}}{2016.06}
+\role{有道事业部}{机器翻译实习生}
+调研语言模型的最新发展和改进，实现基本算法并作报告; 负责NMT模型的调参, 使用sgd, adadelta和 momentum-based 提高模型的BLEU结果.
+
+\datedsubsection{\textbf{北京航空航天大学计算机学院}}{2015.09}
+\role{教育部工程中心}{研究生}
+大四下学期进入该实验室实习, 学习深度学习算法 (DNN/LSTM/CNN), 主要研究 NLP 方向. 期间, 发表两篇会议论文和一篇期刊论文, 参加一次国际会议并获得该会议颁发的 Travel Grant.
+
+
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Python, C/C++, Java, Matlab;
+  \item 工具: Bash Script, Git, Vim, theano.
+\end{itemize}
+
+\section{\faStar\ 获奖情况}
+\datedline{二等奖学金(北京航空航天大学)}{2016$\sim$2015}
+\datedline{Travel Grant of IEEE IJCNN(IEEE)}{2015}
+\datedline{优秀毕业生(浙江工业大学)}{2015}
+\datedline{校一等奖学金(浙江工业大学)}{2014$\sim$2012}
+\datedline{国家奖学金(浙江工业大学)}{2012}
+
+
+
+
+\end{document}

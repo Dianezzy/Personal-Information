@@ -1,0 +1,79 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{fontawesome}
+\newfontfamily{\FA}{[FontAwesome.otf]}
+
+\usepackage[colorlinks,
+            linkcolor=red,
+            anchorcolor=blue,
+            citecolor=green
+            ]{hyperref}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Nan Jiang}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{nanjiang@buaa.edu.cn}{(+86) 131-4651-9692}{\href{https://www.cnblogs.com/ZJUT-jiangnan/}{Personal Blog (cnblogs.com)}}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+
+\section{\faGraduationCap\ Education }
+\datedsubsection{{Beihang University(BUAA)}}{\emph{Sept. 2015}}
+\emph{MA.Eng.} in Computer Science.
+\datedsubsection{{Zhejiang University of Technology(ZJUT)}}{\emph{Sept. 2011}}
+\emph{B.Eng.} in Computer Science,\space Major GPA: 4.0, Top 1 of 60.
+
+\section{\faLightbulbO\ Research Interests }
+Natural Language Processing, Machine Learning, Deep Learning.
+
+\section{\faBook\ Publications }
+\begin{itemize}[parsep=0.5ex]
+\item \textbf{Nan Jiang}, Wenge Rong, et al. Event Trigger Identification with Noise Contrastive Estimation[J]. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2017.
+
+\item \textbf{Nan Jiang}, Wenge Rong, et al. Modeling Joint Representation with Tri-Modal DBNs for Query and Question Matching[J]. IEICE Transactions on Information and Systems, 2016.
+
+\item \textbf{Nan Jiang}, Wenge Rong, et al. An empirical analysis of different sparse penalties for autoencoder in unsupervised feature learning[C]. IJCNN, 2015.
+
+\item Moyuan Huang, Wenge Rong, Tom Arjannikov, \textbf{Nan Jiang}, et al. Bi-Modal Deep Boltzmann Machine Based Musical Emotion Classification. ICANN, 2016.
+
+\end{itemize}
+
+\section{\faGithub\ Github Repositories}
+\begin{itemize}[parsep=0.5ex]
+  \item \href{https://github.com/jiangnanHugo/nmt}{Neural Machine Translation:} github.com/jiangnanHugo/nmt;
+  \item \href{https://github.com/jiangnanHugo/language_modeling}{Language Model Benchmark:} github.com/jiangnanHugo/language\_modeling;
+  \item \href{https://github.com/jiangnanHugo/mlee-nce}{Event Trigger Identification with NCE:} github.com/jiangnanHugo/mlee-nce;
+  \item \href{https://github.com/jiangnanHugo/Self-Taught-Learning}{Self-Taught-Learning:} github.com/jiangnanHugo/Self-Taught-Learning;
+  \item \href{https://github.com/jiangnanHugo/parallel-Computing}{Matrix Parallel Multiplication:} github.com/jiangnanHugo/parallel-Computing;
+\end{itemize}
+
+\section{\faUsers\ Experiences }
+\datedsubsection{\textbf{Netease Corp}}{Jun. 2016}
+\role{Machine Translation Intern}{}
+Investigate recent advance in language modeling, implement some algorithms and report on the group; tune the NMT model with sgd, adadelta and momentum-based algorithms for better BLEU results.
+
+\datedsubsection{\textbf{Engineering Research Center of Ministry of Education}}{Sept. 2015}
+\role{Research Assistant}{}
+Learn the theory on DL and implement DNN/LSTM/CNN model. Besides, applying these algorithm on NLP fields, like sequence word labeling and language model.
+
+\section{\faCogs\ Technical Strengths}
+\begin{itemize}[parsep=0.5ex]
+  \item Languages: Python, Java, C/C++, Matlab;
+  \item Tools: Bash Script, Git, Vim, Theano.
+\end{itemize}
+
+\section{\faStar\ Honors and Awards}
+\datedline{The Second Prize Scholarship (BUAA)}{2016$\sim$2015}
+\datedline{Travel Grant of IEEE IJCNN (IEEE)}{2015}
+\datedline{Outstanding Graduate Student (ZJUT)}{2015}
+\datedline{The First Prize Scholarship (ZJUT)}{2014$\sim$2012}
+\datedline{National Scholarship (ZJUT)}{2012}
+
+\end{document}
