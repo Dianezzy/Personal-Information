@@ -24,7 +24,7 @@
 %  BoldItalicFont = *-MediumIt ,
 %  SmallCapsFont = Fontin-SmallCaps
 %]{SourceCodePro}
-\setmainfont{Arial}
+\setmainfont{Times New Roman}
 
 \RequirePackage[
 	a4paper,
