@@ -28,8 +28,8 @@
 
 \RequirePackage[
 	a4paper,
-	left=0.7in,
-	right=0.3in,
+	left=0.5in,
+	right=0.5in,
 	top=0.50in,
 	bottom=0.5in,
 	nohead
@@ -81,7 +81,7 @@
   \vspace{1.5ex}
 }
 
-\newcommand{\role}[2]{
-  {\par \textit{#1} ~ #2 \par}
+\newcommand{\role}[1]{
+  {\par \textit{#1} \par}
   \vspace{0.85ex}
 }
