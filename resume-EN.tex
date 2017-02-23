@@ -1,46 +1,37 @@
-% !TEX program = xelatex
+\documentclass[margin,line]{resume}
 
-\documentclass{resume}
-\usepackage{fontawesome}
-\newfontfamily{\FA}{[FontAwesome.otf]}
-
-\usepackage[colorlinks,
-            linkcolor=red,
-            anchorcolor=blue,
-            citecolor=green
-            ]{hyperref}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
-\pagenumbering{gobble} % suppress displaying page number
 
 \name{Nan Jiang}
 
-% {E-mail}{mobilephone}{homepage}
-% be careful of _ in emaill address
-\contactInfo{nanjiang@buaa.edu.cn}{(+86) 131-4651-9692}{}
-% {E-mail}{mobilephone}
-% keep the last empty braces!
-%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+\begin{resume}
+\section{Contact Information}
+\begin{tabular}{@{}p{3in}p{3in}}
+School of Computer Science and Engineering & {\it Phone:}  (+86) 131-4651-9692 \\
+Beihang University                         & {\it E-mail:}  {\tt nanjiang@buaa.edu.cn} \\
+Beijing, China                             & {\it Blog:} {\tt jiangnanhugo.github.io/blog} \\
+\end{tabular}
 
-\section{\faGraduationCap\ Education }
-\datedsubsection{{Beihang University (BUAA)}}{Sept. 2015}
-\emph{MA.Eng.} in Computer Science. \\
-Research Interests: Natural Language Processing, Machine Learning, Deep Learning.
-\datedsubsection{{Zhejiang University of Technology (ZJUT)}}{Sept. 2011}
+
+\section{Education}
+{\bf Beihang University}, Beijing,  China\\
+\emph{MA.Eng.} in Computer Science. Advisor:  Wenge, Rong.\\
+ Research Interests: Natural Language Processing, Machine Learning, Deep Learning. \\
+
+
+{\bf Zhejiang University of Technology}, Zhejiang, China\\
 \emph{B.Eng.} in Computer Science,\space Major GPA: 4.0, Top 1 of 60.
 
 
 
 
-\section{\faBook\ Publications }
+\section{Publications}
+\textbf{Nan Jiang}, Wenge Rong, Yifan Nie, et al. Event Trigger Identification with Noise Contrastive Estimation[J]. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2017.
 
-\textbf{Nan Jiang}, Wenge Rong, et al. Event Trigger Identification with Noise Contrastive Estimation[J]. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2017.
+\textbf{Nan Jiang}, Wenge Rong, Baolin Peng, et al. Modeling Joint Representation with Tri-Modal DBNs for Query and Question Matching[J]. IEICE Transactions on Information and Systems, 2016.
 
-\textbf{Nan Jiang}, Wenge Rong, et al. Modeling Joint Representation with Tri-Modal DBNs for Query and Question Matching[J]. IEICE Transactions on Information and Systems, 2016.
-
-\textbf{Nan Jiang}, Wenge Rong, et al. An empirical analysis of different sparse penalties for autoencoder in unsupervised feature learning[C]. IJCNN, 2015.
+\textbf{Nan Jiang}, Wenge Rong, Baolin Peng, Yifan Nie et al. An empirical analysis of different sparse penalties for autoencoder in unsupervised feature learning[C]. IJCNN, 2015.
 
 Yikang Shen, Wenge Rong, \textbf{Nan Jiang}, et al. Word Embedding Based Correlation Model for Question/Answer Matching[C]. AAAI, 2017.
 
@@ -50,46 +41,60 @@ Moyuan Huang, Wenge Rong, Tom Arjannikov, \textbf{Nan Jiang}, et al. Bi-Modal De
 
 
 
+\section{Experiences}
+{\bf Microsoft Corp}, Beijing, China
 
-\section{\faUsers\ Experiences }
-\datedsubsection{\textbf{Microsoft Corp}}{Dec. 2016}
-\role{Research Intern}
+{\em Research Intern} \hfill {\bf Dec, 2016 - present}\\
+right now I am doing.
+
+
+{\bf Youdao, Netease Corp}, Beijing, China
+
+{\em Research Intern} \hfill {\bf June, 2016 - Dec, 2016}\\
 Investigate recent advance in language modeling, implement some algorithms and report on the group; tune the NMT model with sgd, adadelta and momentum-based algorithms for better BLEU results.
 
-\datedsubsection{\textbf{Youdao department, Netease Corp}}{Jun. 2016}
-\role{Machine Translation Intern}
-Investigate recent advance in language modeling, implement some algorithms and report on the group; tune the NMT model with sgd, adadelta and momentum-based algorithms for better BLEU results.
 
-\datedsubsection{\textbf{Engineering Research Center of Ministry of Education, BUAA}}{Sept. 2015}
-\role{Research Assistant}
+{\bf Engineering Research Center}, Beihang University
+
+{\em Research Assistant} \hfill {\bf Sep, 2015 }\\
 Learn the theory on DL and implement DNN/LSTM/CNN model. Besides, applying these algorithm on NLP fields, like sequence word labeling and language model.
 
 
 
-\section{\faGithub\ Github Repositories}
-\begin{itemize}[parsep=0.5ex]
-  \item \href{https://github.com/jiangnanHugo/nmt}{Neural Machine Translation:} github.com/jiangnanHugo/nmt;
-  \item \href{https://github.com/jiangnanHugo/language_modeling}{Language Model Benchmark:} github.com/jiangnanHugo/language\_modeling;
-  \item \href{https://github.com/jiangnanHugo/mlee-nce}{Event Trigger Identification with NCE:} github.com/jiangnanHugo/mlee-nce;
-  \item \href{https://github.com/jiangnanHugo/Self-Taught-Learning}{Self-Taught-Learning:} github.com/jiangnanHugo/Self-Taught-Learning;
-\end{itemize}
-\section{\faCogs\ Technical Strengths}
+\section{Honors and Awards}
 
-Languages: Python, CUDA, C/C++, Java, Matlab;
+The Second Prize Scholarship, Beihang University, 2015$\sim$2016
 
-Tools: Bash Script, Git, Vim, markdown;
+Travel Grant of IEEE IJCNN, IEEE Society, 2015
 
-DL Library: Theano, Tensorflow.
+Outstanding Graduate Student, Zhejiang University of Technology, 2015
+
+The First Prize Scholarship, Zhejiang University of Technology, 2012$\sim$2014
+
+National Scholarship, Zhejiang University of Technology, 2012
+
+\section{Github Repositories}
+
+Language Model Benchmark:
+
+Event Trigger Identification with NCE
+
+Self-Taught-Learning
 
 
-\section{\faStar\ Honors and Awards}
-\datedline{The Second Prize Scholarship (BUAA)}{2016$\sim$2015}
-\datedline{Travel Grant of IEEE IJCNN (IEEE)}{2015}
-\datedline{Outstanding Graduate Student (ZJUT)}{2015}
-\datedline{The First Prize Scholarship (ZJUT)}{2014$\sim$2012}
-\datedline{National Scholarship (ZJUT)}{2012}
+\section{Computer \\ Skills}
+Languages:  Python, CUDA, C/C++, Java, Matlab, Bash;
 
-\section{\faStar\ Others}
-\href{https://jiangnanhugo.github.io/blog/}{Personal Blog Site} (built with jekyll and markdown)
+Applications: Git, Vim, markdown;
 
+DL Library: Theano, Tensorflow.\\
+
+
+
+
+\end{resume}
 \end{document}
+
+
+
+
