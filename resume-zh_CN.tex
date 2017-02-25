@@ -3,11 +3,32 @@
 % !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
+\RequirePackage{xeCJK}
 
 
-\usepackage{zh_CN-fonts} 
 
-\usepackage{cite}
+\setCJKmainfont[
+BoldFont=SimHei,
+ItalicFont=KaiTi,
+SmallCapsFont=SimHei
+]{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{Fangsong}
+
+\setCJKfamilyfont{zhsong}{SimSun}
+\setCJKfamilyfont{zhhei}{SimHei}
+\setCJKfamilyfont{zhfs}{Fangsong}
+\setCJKfamilyfont{zhkai}{KaiTi}
+\setCJKfamilyfont{zhli}{LiSu}
+\setCJKfamilyfont{zhyou}{YouYuan}
+
+\newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
+\newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
+\newcommand*{\kaishu}{\CJKfamily{zhkai}}  % 楷书
+\newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
+\newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
+\newcommand*{\youyuan}{\CJKfamily{zhyou}} % 幼圆
+
 
 
 \begin{document}
@@ -15,25 +36,28 @@
 
 \name{姜楠}
 
-% {E-mail}{mobilephone}{homepage}
-% be careful of _ in emaill address
-\contactInfo{nanjiang@buaa.edu.cn}{(+86) 131-4651-9692}{\href{https://www.cnblogs.com/ZJUT-jiangnan/}{个人博客 (博客园)}}
-% {E-mail}{mobilephone}
-% keep the last empty braces!
-%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
 
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{北京航空航天大学}}{2015 - 至今}
-在读硕士研究生\ 计算机科学与技术专业 .
-\datedsubsection{\textbf{浙江工业大学}}{2011 - 2015}
+
+\section{教育背景}
+\begin{tabular}{@{}p{3in}p{3in}}
+计算机学院 & {\it Phone:}  (+86) 131-4651-9692 \\
+北京航空航天大学  & {\it 邮箱:}  {\tt nanjiang@buaa.edu.cn} \\
+北京，中国         & {\it 博客:} {\tt jiangnanhugo.github.io/blog} \\
+\end{tabular}
+
+
+\section{教育背景}
+{\bf 北京航空航天大学}, Beijing,  China\\
+在读硕士研究生\ 计算机科学与技术专业 . Advisor:  Wenge, Rong.\\
+研究方向: 自然语言处理, 机器学习, 深度学习. \\
+
+
+{\bf 浙江工业大学}, Zhejiang, China\\
 学士\ 计算机科学与技术, 平均绩点: 4.0, 排名: 1/60.
 
-\section{\faLightbulbO\ 研究方向}
-自然语言处理, 机器学习, 深度学习.
 
-
-\section{\faBook\ 发表论文 }
-\begin{itemize}[parsep=0.5ex]
+\section{发表论文}
+\begin{itemize}
 \item \textbf{Nan Jiang}, Wenger Rong, et al. An Efficient Hierarchical Softmax for Large Vocabulary Language Models[C]. International Conference on World Wide Web, 2017. (submitted)
 \item \textbf{Nan Jiang}, Wenge Rong, et al. Event Trigger Identification with Noise Contrastive Estimation[J]. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2017.
 
@@ -44,39 +68,44 @@
 \item Moyuan Huang, Wenge Rong, Tom Arjannikov, \textbf{Nan Jiang}, Zhang Xiong: Bi-Modal Deep Boltzmann Machine Based Musical Emotion Classification. ICANN, 2016.
 \end{itemize}
 
-\section{\faGithub\ Github 项目}
-\begin{itemize}[parsep=0.5ex]
-  \item \href{https://github.com/jiangnanHugo/nmt}{神经机器翻译模型:} github.com/jiangnanHugo/nmt;
-  \item \href{https://github.com/jiangnanHugo/language_modeling}{语言模型评测:} github.com/jiangnanHugo/language\_modeling;
-  \item \href{https://github.com/jiangnanHugo/mlee-nce}{基于NCE的事件触发词识别:} github.com/jiangnanHugo/mlee-nce;
-  \item \href{https://github.com/jiangnanHugo/Self-Taught-Learning}{Matlab实现的自学习算法:} github.com/jiangnanHugo/Self-Taught-Learning;
-  \item \href{https://github.com/jiangnanHugo/parallel-Computing}{Pthread \& MPI 矩阵并行乘法:} github.com/jiangnanHugo/parallel-Computing.
+\section{ Github 项目}
+\begin{itemize}
+  \item {神经机器翻译模型:} github.com/jiangnanHugo/nmt;
+  \item {语言模型评测:} github.com/jiangnanHugo/language\_modeling;
+  \item {基于NCE的事件触发词识别:} github.com/jiangnanHugo/mlee-nce;
+  \item {Matlab实现的自学习算法:} github.com/jiangnanHugo/Self-Taught-Learning;
+  \item {Pthread \& MPI 矩阵并行乘法:} github.com/jiangnanHugo/parallel-Computing.
 \end{itemize}
 
-\section{\faUsers\ 实习经历 }
-\datedsubsection{\textbf{北京网易研发中心}}{2016.06}
-\role{有道事业部}{机器翻译实习生}
+\section{实习经历 }
+{\bf 北京网易研发中心}, Beijing, China
+
+{\em 机器翻译实习生} \hfill {\bf June, 2016 - Dec, 2016}\\
 调研语言模型的最新发展和改进，实现基本算法并作报告; 负责NMT模型的调参, 使用sgd, adadelta和 momentum-based 提高模型的BLEU结果.
 
-\datedsubsection{\textbf{北京航空航天大学计算机学院}}{2015.09}
-\role{教育部工程中心}{研究生}
+
+{\bf 教育部工程中心}, 北京航空航天大学计算机学院
+
+{\em 研究生} \hfill {\bf Sep, 2015 }\\
 大四下学期进入该实验室实习, 学习深度学习算法 (DNN/LSTM/CNN), 主要研究 NLP 方向. 期间, 发表两篇会议论文和一篇期刊论文, 参加一次国际会议并获得该会议颁发的 Travel Grant.
 
-
-
-\section{\faCogs\ IT 技能}
+\section{IT 技能}
 % increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
+\begin{itemize}
   \item 编程语言: Python, C/C++, Java, Matlab;
   \item 工具: Bash Script, Git, Vim, theano.
 \end{itemize}
 
-\section{\faStar\ 获奖情况}
-\datedline{二等奖学金(北京航空航天大学)}{2016$\sim$2015}
-\datedline{Travel Grant of IEEE IJCNN(IEEE)}{2015}
-\datedline{优秀毕业生(浙江工业大学)}{2015}
-\datedline{校一等奖学金(浙江工业大学)}{2014$\sim$2012}
-\datedline{国家奖学金(浙江工业大学)}{2012}
+\section{获奖情况}
+二等奖学金, 北京航空航天大学, 2016$\sim$2015
+
+Travel Grant of IEEE IJCNN(IEEE), 2015
+
+优秀毕业生, 浙江工业大学, 2015
+
+校一等奖学金, 浙江工业大学, 2014$\sim$2012
+
+国家奖学金, 浙江工业大学, 2012
 
 
 
