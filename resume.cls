@@ -2,7 +2,7 @@
 %    for LaTeX version 2.09
 % Copyright (C) 1988,1989 by Michael DeCorte
 
-\typeout{Document Style `res' <26 Sep 89>.}
+\typeout{Document Style `resume' <26 Sep 89>.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % res.sty
@@ -775,7 +775,7 @@
 \topmargin 0pt
 \headheight 0pt
 \headsep 0pt
-\textheight 12in
+\textheight 10in
 \textwidth 6.0in
 \parindent 0pt
 \topmargin -0.5in
