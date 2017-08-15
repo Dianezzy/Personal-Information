@@ -4,6 +4,7 @@
 
 \documentclass[margin,line]{resume}
 \usepackage{zh_CN-fonts}
+\usepackage[hidelinks]{hyperref}
 
 
 
@@ -15,15 +16,15 @@
 
 \section{联系方式}
 \begin{tabular}{@{}p{3in}p{3in}}
-计算机学院 & {\it 手机:}  (+86) 131-4651-9692 \\
-北京航空航天大学  & {\it 邮箱:}  {\tt nanjiang@buaa.edu.cn} \\
-北京，中国         & {\it 博客:} {\tt jiangnanhugo.github.io/blog} \\
+计算机学院 & { 手机:}  (+86) 131-4651-9692 \\
+北京航空航天大学  & { 邮箱:}  {\tt nanjiang@buaa.edu.cn} \\
+北京，中国         & { 博客:} {\tt jiangnanhugo.github.io/blog} \\
 \end{tabular}
 
 
 \section{教育背景}
 {\bf 北京航空航天大学}, 北京,  中国\\
-在读硕士研究生\ 计算机科学与技术专业 . Advisor:  Wenge, Rong.\\
+在读硕士研究生\ 计算机科学与技术专业 . \\
 研究方向: 自然语言处理, 机器学习, 深度学习. \\
 
 
@@ -33,15 +34,17 @@
 
 \section{发表论文}
 
-\textbf{Nan Jiang}, Wenger Rong, et al. An Efficient Hierarchical Softmax for Large Vocabulary Language Models[C]. International Conference on World Wide Web, 2017. (submitted)
+\textbf{Nan Jiang}, Wenge Rong, Min Gao, Yikang Shen and Zhang Xiong. Exploration of Tree-based Hierarchical Softmax for Recurrent Language Models[C]. Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence (IJCAI), 2017. [\href{https://github.com/jiangnanHugo/lmkit}{code}][\href{https://www.ijcai.org/proceedings/2017/0271.pdf}{pdf}]
 
-\textbf{Nan Jiang}, Wenge Rong, et al. Event Trigger Identification with Noise Contrastive Estimation[J]. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2017.
+\textbf{Nan Jiang}, Wenge Rong, Yifan Nie, Yikang Shen and Zhang Xiong. Event Trigger Identification with Noise Contrastive Estimation[J]. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2017. [\href{https://github.com/jiangnanHugo/mlee-nce}{code}], [\href{https://github.com/jiangnanhugo/paper/blob/master/APBC2017/APBC2017.pdf}{pdf}]
 
-\textbf{Nan Jiang}, Wenge Rong, et al. Modeling Joint Representation with Tri-Modal DBNs for Query and Question Matching[J]. IEICE Transactions on Information and Systems, 2016.
+\textbf{Nan Jiang}, Wenge Rong, Baolin Peng, Yifan Nie and Zhang Xiong. Modeling Joint Representation with Tri-Modal DBNs for Query and Question Matching[J]. IEICE Transactions on Information and Systems, 2016.
 
-\textbf{Nan Jiang}, Wenge Rong, et al. An empirical analysis of different sparse penalties for autoencoder in unsupervised feature learning[C]. IJCNN, 2015.
+\textbf{Nan Jiang}, Wenge Rong, Baolin Peng, Yifan Nie and Zhang Xiong. An empirical analysis of different sparse penalties for autoencoder in unsupervised feature learning[C]. International Joint Conference on Neural Networks (IJCNN), 2015.
 
-Moyuan Huang, Wenge Rong, Tom Arjannikov, \textbf{Nan Jiang}, Zhang Xiong: Bi-Modal Deep Boltzmann Machine Based Musical Emotion Classification. ICANN, 2016.
+Yikang Shen, Wenge Rong, \textbf{Nan Jiang}, Baolin Peng Jie Tang and Zhang Xiong. Word Embedding Based Correlation Model for Question/Answer Matching[C]. Proceedings of the Thirtieth {AAAI} Conference on Artificial Intelligence (AAAI), 2017.
+
+Yifan Qian, Wenge Rong, \textbf{Nan Jiang}, Jie Tang and Zhang Xiong. Citation regression analysis of computer science publications in different ranking categories and subfields[J]. Scientometrics 110(3): 1351-1374 (2017).
 
 
 
@@ -49,35 +52,27 @@ Moyuan Huang, Wenge Rong, Tom Arjannikov, \textbf{Nan Jiang}, Zhang Xiong: Bi-Mo
 \section{实习经历}
 {\bf 微软}, 北京, 中国 \\
 {\em 研发实习生} \hfill {\bf  2016/12 - 现在}\\
-调研语言模型的最新发展和改进，实现基本算法并作报告; 负责NMT模型的调参, 使用sgd, adadelta和 momentum-based 提高模型的BLEU结果.\\
+整理并清洗聊天对话数据集，调试seq2seq模型，并对当前的论文中的改进模型加以复现和评价。\\
 
 {\bf 网易研发中心}, 北京, 中国 \\
 {\em 机器翻译实习生} \hfill {\bf  2016/6 - 2016/12}\\
-调研语言模型的最新发展和改进，实现基本算法并作报告; 负责NMT模型的调参, 使用sgd, adadelta和 momentum-based 提高模型的BLEU结果.\\
+调研语言模型的最新发展和改进，实现基本算法并作报告; 负责NMT模型的参数优化。\\
 
 
-{\bf 教育部工程中心}, 北京航空航天大学计算机学院\\
-{\em 研究生} \hfill {\bf 2015/9 }\\
-大四下学期进入该实验室实习, 学习深度学习算法 (DNN/LSTM/CNN), 主要研究 NLP 方向. 期间, 发表两篇会议论文和一篇期刊论文, 参加一次国际会议并获得该会议颁发的 Travel Grant.
 
 
-\section{ Github 项目}
-{神经机器翻译模型:} github.com/jiangnanHugo/nmt;
+\section{比赛}
+KDD Cup： 车流量预测比赛 2017, 第三名.
 
-{语言模型评测:} github.com/jiangnanHugo/language\_modeling;
-
-{基于NCE的事件触发词识别:} github.com/jiangnanHugo/mlee-nce;
-
-{Matlab实现的自学习算法:} github.com/jiangnanHugo/Self-Taught-Learning;
-
-{Pthread \& MPI 矩阵并行乘法:} github.com/jiangnanHugo/parallel-Computing.
+Kaggle: Quora 句子相似检测, 2017. 第八名
 
 
 \section{IT 技能}
+\begin{tabular}{@{}p{3in}p{3in}}
+语言: CUDA, C/C++, Python, Java, Matlab;& 工具: Git, Vim, Markdown, Bash; \\
+DL框架: Theano, Lasagne, Tensorflow, Keras  &  \\
+\end{tabular}
 
-编程语言: Python, C/C++, Java, Matlab;
-
-工具: Bash Script, Git, Vim, theano.
 
 
 \section{获奖情况}
