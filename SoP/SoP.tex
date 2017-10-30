@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}}
+  \HRule\par%
+  \textit{\@author \hfill \@date}
+  \par
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\title{Statement of Purpose}
+\author{Nan Jiang}
+\date{29/10/2017}
+
+\begin{document}
+  \maketitle% prints the title block
+  \thispagestyle{empty}
+  \vspace{16pt}
+
+I am currently a graduate student from the School of Computer Science and Engineering, Beihang University. My advisor is Prof. Wenge Rong, and my research interests are Deep Learning methods (DL) on Natural Language Processing (NLP). I got my Bachelor's degree in Computer Science and Technology and second Bachelor's degree in Electronic Engineering from Zhejiang University of Technology, China.
+
+My undergraduate study can be divided into two parts. For the first two years, I learned many math, programming courses and conducted class experiments from simple controlled chips to algorithm problems, from crawling data on websites to design information management system. Getting all the worthwhile awards in my university with my devoted effort. In the last two years, I took courses at Beihang University as a exchange student and doing experiments under my current professor. It became appealing to me to purchase a graduate degree on DL/NLP, after several months about learning and publishing a paper on Sparse Penalty on Autoencoder model.
+
+Afterwards, during my graduate school learning period,  it took me years to learn with deeplearning.net tutorials and DL Summer School at 2015 - 2017 from MILA Lab, and understand the idea was hard. Furthermore, I attended two internship to practice these fascinating explanations about current models onto real-world challenge, like experimenting with current Language Models (LM) at Youdao Department in Netease and modifying Neural Dialog Generation (NRG) models at Search Technology Center Asia (STCA), Microsoft.
+
+To illustrate, Youdao department holds a weekly paper sharing program, which benefit me a lot on learning LM and Neural Machine Translation (NMT) variations. Understanding and implementing these algorithms challenged me a lot and proposing better models was a big headache during these times. With devoted effort for 3 months, experimental comparisons on historical methods are conducted, the improved model on Hierarchical Softmax was also published at IJCAI 2017 conference and the detailed journal paper is under review at TNNLS (IEEE Transactions).
+
+Besides, after a got NLP internship at STCA at Microsoft. In 9 months, my mentor and I have been doing experiments on ranking-based optimization to improve NRG model and writing papers on three different conferences EMNLP 2017, NIPS 2017 and AAAI 2018. These specialized conferences on NLP/ML are competitive and our works have not get accepted by these chairs, while we learn knowledge on formalizing our ideas into pages and conducting extensive experiments to validate the theories. Except for catching the conference's deadline, my mentor, another intern from Peking University and I also attended competitions at Kaggle and KDD CUP. For example, in the Quora duplicate question identification competition at Kaggle, I contributed my efforts on developing various deep models to extract features that measure different metrics, which would later be ensembled with other sparse statistical features with XGBoost.
+
+
+To conclude, there are two routes for my life: purchasing a PhD degree or finding a job about DL, the answer became clear to me after working in Microsoft as an intern for 9 months and have a detailed conversation on the issues and possibility of Dialog Models with Prof. Aaron Courvile at IJCAI 2017 conference. Doing the daily routine works and applying existing algorithms to current system is easy, yet I want to take a risker one, exploring the detailed structures of DL/NLP. Instead of observing the great development of DL models, it would better to get in the game. Besides, people nowadays solely cascade these historical proposed modules to achieve better performance in existing tasks. Yet permutating over different modules is not enough, performance need to be improved and observed results acquire better explanations.
+
+Devoting all my energy to the development of NLP is challenging and fascinating, as I believe that the pattern of human language can be revealed by experts and mimicking human conversations will be achieved with specified models. From the first day I get acquainted with DL theories, MILA Lab at Montreal has helped me gained knowledge though diverse channels, like coding samples, detailed videos and published papers. Learning and working at this advanced scientific lab has been my dream, so I exploit every possibility on publishing papers in the fields of ML/DL, to meet up the qualification of PhD candidates in the lab.
+
+
+
+\end{document}
